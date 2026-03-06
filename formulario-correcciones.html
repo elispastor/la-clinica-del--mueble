@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Correcciones · NGE Tarjetas Digitales</title>
+  <title>Correcciones · Clínica del Mueble</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome -->
@@ -78,8 +78,13 @@
         <p class="text-blue-800">Recibirás respuesta en máximo 24 horas por WhatsApp.</p>
       </div>
       
-      <form name="correcciones" method="POST" data-netlify="true" enctype="multipart/form-data">
+      <!-- ===== FORMULARIO CORREGIDO ===== -->
+      <!-- Apunta a tu sitio principal y tiene campo oculto de afiliado -->
+      <form name="correcciones" method="POST" action="https://tutarjetadigitalnge.netlify.app/" enctype="multipart/form-data">
+        
+        <!-- CAMPOS OCULTOS OBLIGATORIOS -->
         <input type="hidden" name="form-name" value="correcciones">
+        <input type="hidden" name="afiliado" value="CLINICA-MUEBLE">  <!-- PARA IDENTIFICAR EL ORIGEN -->
         
         <!-- NOMBRE -->
         <div class="mb-4">
