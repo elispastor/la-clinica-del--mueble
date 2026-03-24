@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>CLÍNICA DEL MUEBLE · Tapicería profesional</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -11,32 +11,22 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Montserrat', sans-serif;
       background: #f4efe7;
       color: #2c2c2c;
     }
-
-    /* Textura de madera suave de fondo */
     .bg-madera {
       background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
       background-color: #d9c8b2;
       background-blend-mode: overlay;
     }
-
-    /* Efecto de tela en tarjetas */
     .bg-tela {
       background-image: url('https://www.transparenttextures.com/patterns/fabric-of-squares.png');
       background-color: #faf3e8;
       background-blend-mode: multiply;
     }
-
     .btn-tapiz {
       background: #8b5a2b;
       color: white;
@@ -48,7 +38,6 @@
       color: #8b5a2b;
       transform: scale(1.05);
     }
-
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -70,22 +59,22 @@
   <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
 </a>
 
-<!-- CONTENEDOR PRINCIPAL -->
 <div class="max-w-4xl mx-auto p-4 md:p-6">
-<!-- ===== MENÚ DE NAVEGACIÓN ===== -->
-<div class="mb-6">
-  <ul class="flex flex-wrap justify-center gap-4 md:gap-8 bg-[#5d3a1a] text-white py-3 px-4 rounded-full border-2 border-[#e3c9a0]">
-    <li><a href="#inicio" class="hover:text-[#e3c9a0]">Inicio</a></li>
-    <li><a href="#servicios" class="hover:text-[#e3c9a0]">Servicios</a></li>
-    <li><a href="#contacto" class="hover:text-[#e3c9a0]">Contacto</a></li>
-    <li><a href="/formulario-correcciones.html" class="hover:text-[#e3c9a0] font-bold" style="color: #e3c9a0;">📝 Actualizar</a></li>
-  </ul>
-</div>
-<!-- ===== FIN MENÚ ===== -->
-  <!-- TARJETA PRINCIPAL (EFECTO TELA) -->
+
+  <!-- MENÚ -->
+  <div class="mb-6">
+    <ul class="flex flex-wrap justify-center gap-4 md:gap-8 bg-[#5d3a1a] text-white py-3 px-4 rounded-full border-2 border-[#e3c9a0]">
+      <li><a href="#inicio" class="hover:text-[#e3c9a0]">Inicio</a></li>
+      <li><a href="#servicios" class="hover:text-[#e3c9a0]">Servicios</a></li>
+      <li><a href="#nosotros" class="hover:text-[#e3c9a0]">Nosotros</a></li>
+      <li><a href="#contacto" class="hover:text-[#e3c9a0]">Contacto</a></li>
+    </ul>
+  </div>
+
+  <!-- TARJETA PRINCIPAL -->
   <div class="bg-tela rounded-3xl shadow-2xl overflow-hidden border-4 border-[#b89b7a]">
 
-    <!-- ENCABEZADO CON NOMBRE Y TELÉFONO -->
+    <!-- ENCABEZADO -->
     <div class="bg-[#5d3a1a] text-white p-6 text-center border-b-4 border-[#c9a87c]">
       <h1 class="font-['Playfair_Display'] text-5xl md:text-6xl font-bold mb-2" style="color: #e3c9a0;">CLÍNICA DEL MUEBLE</h1>
       <div class="flex justify-center items-center gap-4 text-xl md:text-2xl mt-2">
@@ -94,47 +83,60 @@
       </div>
     </div>
 
-    <!-- IMAGEN DESTACADA (SILLÓN DE TAPICERÍA) -->
+    <!-- PORTADA -->
     <div class="relative h-80 md:h-96 overflow-hidden">
-<img src="./portada.jpg" alt="Taller de tapicería" class="w-full h-full object-cover object-center opacity-90">           alt="Sillón tapizado" 
-           class="w-full h-full object-cover object-center">
-      <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
-        <div class="bg-black bg-opacity-50 text-white p-4 rounded-full text-2xl md:text-3xl font-bold border-4 border-[#e3c9a0]">
-          <i class="fas fa-star text-yellow-400"></i> ESPECIALISTAS <i class="fas fa-star text-yellow-400"></i>
-        </div>
-      </div>
+      <img src="./portada.jpg" alt="Taller de tapicería" class="w-full h-full object-cover object-center">
     </div>
 
-    <!-- CONTENIDO PRINCIPAL -->
+    <!-- CONTENIDO -->
     <div class="p-6 md:p-8">
 
-      <!-- FRASE DE IMPACTO -->
+      <!-- FRASE -->
       <div class="text-center mb-8">
         <p class="text-2xl md:text-3xl font-['Playfair_Display'] italic text-[#5d3a1a] border-b-2 border-[#c9a87c] pb-4">
           "Devolvemos la vida a tus muebles"
         </p>
       </div>
 
-      <!-- SERVICIOS EN TRES COLUMNAS -->
+      <!-- SERVICIOS -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div class="bg-white bg-opacity-80 p-5 rounded-xl shadow-lg text-center border-l-4 border-[#8b5a2b]">
           <div class="text-5xl mb-3">🛋️</div>
           <h3 class="font-bold text-xl text-[#5d3a1a] mb-2">Fabricación</h3>
-          <p class="text-gray-700">Diseño y creación de muebles a medida, con los mejores materiales.</p>
+          <p class="text-gray-700">Diseño y creación de muebles a medida.</p>
         </div>
         <div class="bg-white bg-opacity-80 p-5 rounded-xl shadow-lg text-center border-l-4 border-[#8b5a2b]">
           <div class="text-5xl mb-3">🔨</div>
           <h3 class="font-bold text-xl text-[#5d3a1a] mb-2">Reparación</h3>
-          <p class="text-gray-700">Restauración estructural y cambio de piezas dañadas.</p>
+          <p class="text-gray-700">Restauración estructural y cambio de piezas.</p>
         </div>
         <div class="bg-white bg-opacity-80 p-5 rounded-xl shadow-lg text-center border-l-4 border-[#8b5a2b]">
           <div class="text-5xl mb-3">🎨</div>
           <h3 class="font-bold text-xl text-[#5d3a1a] mb-2">Pintura</h3>
-          <p class="text-gray-700">Acabados profesionales, laqueado y renovación de color.</p>
+          <p class="text-gray-700">Acabados profesionales y renovación de color.</p>
         </div>
       </div>
 
-      <!-- ESPECIALIDAD DETALLADA -->
+      <!-- MISIÓN, VISIÓN, VALORES -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-[#5d3a1a] text-white p-5 rounded-xl text-center border-2 border-[#e3c9a0]">
+          <i class="fas fa-bullseye text-4xl mb-3 text-[#e3c9a0]"></i>
+          <h3 class="text-xl font-bold mb-2">🎯 Misión</h3>
+          <p class="text-sm">Devolver la vida y funcionalidad a los muebles, ofreciendo restauración y tapicería de calidad con materiales sostenibles.</p>
+        </div>
+        <div class="bg-[#5d3a1a] text-white p-5 rounded-xl text-center border-2 border-[#e3c9a0]">
+          <i class="fas fa-eye text-4xl mb-3 text-[#e3c9a0]"></i>
+          <h3 class="text-xl font-bold mb-2">👁️ Visión</h3>
+          <p class="text-sm">Ser referentes en la región en restauración de muebles, destacando por nuestro arte y compromiso con el medio ambiente.</p>
+        </div>
+        <div class="bg-[#5d3a1a] text-white p-5 rounded-xl text-center border-2 border-[#e3c9a0]">
+          <i class="fas fa-heart text-4xl mb-3 text-[#e3c9a0]"></i>
+          <h3 class="text-xl font-bold mb-2">⭐ Valores</h3>
+          <p class="text-sm">Honestidad, calidad artesanal, respeto por la historia de cada mueble, puntualidad y pasión por lo que hacemos.</p>
+        </div>
+      </div>
+
+      <!-- ESPECIALIDADES -->
       <div class="bg-[#5d3a1a] text-white p-6 rounded-2xl mb-8 border-2 border-[#e3c9a0]">
         <h2 class="text-2xl font-bold text-center mb-4" style="color: #e3c9a0;">TODA CLASE DE MUEBLES PARA EL HOGAR</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
@@ -149,14 +151,12 @@
         </div>
       </div>
 
-      <!-- BOTONES DE ACCIÓN -->
+      <!-- BOTONES -->
       <div class="flex flex-wrap justify-center gap-4 mt-6">
-        <a href="https://wa.me/5933228309768?text=Hola!%20Quiero%20cotizar%20un%20servicio%20de%20tapicería" 
-           class="btn-tapiz px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2">
+        <a href="https://wa.me/5933228309768?text=Hola!%20Quiero%20cotizar%20un%20servicio%20de%20tapicería" class="btn-tapiz px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2">
           <i class="fab fa-whatsapp text-2xl"></i> Cotizar por WhatsApp
         </a>
-        <a href="tel:+5933228309768" 
-           class="bg-[#5d3a1a] text-white px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2 border-2 border-[#e3c9a0] hover:bg-[#7a4f2a]">
+        <a href="tel:+5933228309768" class="bg-[#5d3a1a] text-white px-8 py-4 rounded-full font-bold text-lg flex items-center gap-2 border-2 border-[#e3c9a0] hover:bg-[#7a4f2a]">
           <i class="fas fa-phone-alt"></i> Llamar ahora
         </a>
       </div>
@@ -170,7 +170,7 @@
 
     </div>
 
-    <!-- PIE DE PÁGINA (DERECHOS Y DISEÑO) -->
+    <!-- FOOTER -->
     <div class="bg-[#5d3a1a] text-white text-center py-4 border-t-4 border-[#e3c9a0]">
       <p class="text-sm">© 2026 CLÍNICA DEL MUEBLE · Todos los derechos reservados</p>
       <p class="text-xs mt-1 opacity-80">Diseño: <a href="https://wa.me/573244913371" class="underline hover:text-[#e3c9a0]">NGE tarjeta digital</a></p>
@@ -179,12 +179,10 @@
   </div>
 </div>
 
-<!-- CÓDIGO QR (OPCIONAL) -->
+<!-- QR -->
 <div class="max-w-xs mx-auto mt-8 p-4 bg-white bg-opacity-80 rounded-2xl shadow-lg border-2 border-[#b89b7a] text-center">
   <h3 class="font-bold text-[#5d3a1a] mb-2">📲 Escaneá y guardá el contacto</h3>
-  <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://tapiceriamuestra.netlify.app" 
-       alt="QR CLÍNICA DEL MUEBLE" 
-       class="mx-auto rounded-lg">
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://clinicadelmueble.netlify.app" alt="QR" class="mx-auto rounded-lg">
   <p class="text-xs mt-2 text-gray-600">Agendanos con un escaneo</p>
 </div>
 
@@ -195,9 +193,7 @@
         title: 'CLÍNICA DEL MUEBLE',
         text: 'Fabricación, reparación y pintura de muebles',
         url: window.location.href
-      }).catch(() => {
-        alert('Copia este enlace: ' + window.location.href);
-      });
+      }).catch(() => alert('Copia este enlace: ' + window.location.href));
     } else {
       alert('Comparte este enlace: ' + window.location.href);
     }
